@@ -14,7 +14,7 @@ import time
 import pyjokes
 import PyDictionary
 import ctypes
-from newspaper import Article
+#from newspaper import Article
 
 import json
 import wolframalpha
