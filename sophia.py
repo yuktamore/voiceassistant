@@ -14,19 +14,16 @@ import time
 import pyjokes
 import PyDictionary
 import ctypes
-#from newspaper import Article
 
 import json
 import wolframalpha
 import requests
-import math
-
 import random
 
 import math_function
 import ToDo
 
-assistant = "Sophia"
+assistant = "Sofia"
 user = "Human"
 end = ["bye","goodbye","adios","exit","stop","close","quit","end", "shut down", "you may leave","shutdown"]
 random_list = ["will you be my gf", "will you be my bf", "i love you"]
@@ -49,7 +46,7 @@ def speak(text):
     engine.say(text)
     engine.runAndWait()
 def display(text):
-    print(f"{assistant}:{text}\n")
+    ass_chat = print(f"{assistant}:{text}\n")
     speak(text)
 def isContain(txt, lst):
     for word in lst:
@@ -78,7 +75,7 @@ def takeCommand():
         audio = r.listen(source)
 
         try:
-            print(f"{assistant}: Recognizing...")
+            user_chat = print(f"{assistant}: Recognizing...")
             statement = r.recognize_google(audio,language='en-in')
             print(f"\n{user}:{statement}\n")
         except Exception as e:
@@ -298,5 +295,5 @@ def work():
                 print(" City Not Found ")
         """
 
-if __name__ == '__main__':
-    work()
+#if __name__ == '__main__':
+    #work()
